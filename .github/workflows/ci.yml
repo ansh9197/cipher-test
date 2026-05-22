@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
-        run: pip install nonexistent-package-xyz123
+      - name: Install deps
+        run: pip install requests==99.99.99 numpy==999.0.0
       - name: Run tests
-        run: python -m pytest tests/
+        run: python -m pytest tests/ -v
